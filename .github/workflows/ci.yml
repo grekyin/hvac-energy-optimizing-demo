@@ -1,0 +1,78 @@
+name: HVAC Energy Optimizing System CI / HVAC能源优化系统持续集成
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Node.js / 设置 Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+        cache: 'npm'
+    
+    - name: Set up Python / 设置 Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.8'
+    
+    - name: Install dependencies / 安装依赖
+      run: |
+        npm install
+        pip install -r requirements.txt
+    
+    - name: Run tests / 运行测试
+      run: |
+        npm test
+        python -m pytest tests/
+    
+    - name: Build Docker images / 构建 Docker 镜像
+      run: |
+        docker-compose build
+    
+    - name: Run Docker tests / 运行 Docker 测试
+      run: |
+        docker-compose up -d
+        sleep 30
+        docker-compose ps
+        docker-compose down
+
+  lint:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Node.js / 设置 Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+        cache: 'npm'
+    
+    - name: Run ESLint / 运行 ESLint
+      run: npm run lint
+    
+    - name: Run Prettier check / 运行 Prettier 检查
+      run: npm run format:check
+
+  security:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Run security audit / 运行安全审计
+      run: npm audit
+    
+    - name: Run dependency check / 运行依赖检查
+      run: |
+        pip install safety
+        safety check
