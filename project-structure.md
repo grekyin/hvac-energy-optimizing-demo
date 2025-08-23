@@ -1,13 +1,43 @@
-# Demo项目完整结构说明
+# HVAC Energy Optimizing System Demo - Complete Project Structure
 
-## 项目概述
+# HVAC能源优化系统演示项目完整结构说明
 
+## Project Overview / 项目概述
+
+**English:**
+HVAC Energy Optimizing System Demo is an exhibition demonstration system for industrial HVAC energy-saving intelligent control. The system uses Docker containerization deployment and consists of three core components.
+
+**中文:**
 HVAC能源优化系统演示项目是一个用于展览会演示的工业空调节能智能控制系统，采用Docker容器化部署，包含三个核心组件。
 
-## 完整目录结构
+## Complete Directory Structure / 完整目录结构
 
+**English:**
 ```
-demo/
+hvac-energy-optimizing-demo/
+├── README.md                           # Main project documentation
+├── project-structure.md                # Project structure documentation
+│
+├── docs/                               # Documentation directory
+│   ├── README.md                       # Documentation guide
+│   ├── api/                            # API documentation
+│   │   ├── datasource-api.md           # Data source API documentation
+│   │   ├── resling-api.md              # Resling application API documentation
+│   │   └── frontend-api.md             # Frontend API documentation
+│   ├── user-guide/                     # User guide
+│   │   ├── demo-operation-guide.md     # Demo operation guide
+│   │   ├── user-manual.md              # User manual
+│   │   └── faq.md                      # Frequently asked questions
+│   └── developer-guide/                # Developer guide
+│       ├── development-setup.md        # Development environment setup
+│       ├── coding-standards.md         # Coding standards
+│       ├── development-workflow.md     # Development workflow
+│       └── testing-guide.md            # Testing guide
+```
+
+**中文:**
+```
+hvac-energy-optimizing-demo/
 ├── README.md                           # 项目主说明文档
 ├── project-structure.md                # 项目结构说明文档
 │
@@ -26,6 +56,7 @@ demo/
 │       ├── coding-standards.md         # 代码规范
 │       ├── development-workflow.md     # 开发流程
 │       └── testing-guide.md            # 测试指南
+```
 │
 ├── docker/                             # Docker容器目录
 │   ├── README.md                       # Docker说明
@@ -208,28 +239,49 @@ demo/
         └── demo-logo.png               # Demo Logo
 ```
 
-## 文件命名规范
+## File Naming Conventions / 文件命名规范
 
-### 文档文件
+### Documentation Files / 文档文件
+**English:**
+- Use English naming
+- Separate words with hyphens
+- Use lowercase letters
+- Example: `functional-requirements.md`
+
+**中文:**
 - 使用英文命名
 - 单词间用连字符分隔
 - 使用小写字母
 - 示例：`functional-requirements.md`
 
-### 代码文件
+### Code Files / 代码文件
+**English:**
+- Use camelCase naming
+- Class names use PascalCase
+- Function names use camelCase
+- Example: `deviceControl.js`
+
+**中文:**
 - 使用驼峰命名法
 - 类名使用大驼峰
 - 函数名使用小驼峰
 - 示例：`deviceControl.js`
 
-### 配置文件
+### Configuration Files / 配置文件
+**English:**
+- Use dot separation
+- Use lowercase letters
+- Example: `docker-compose.yml`
+
+**中文:**
 - 使用点分隔
 - 使用小写字母
 - 示例：`docker-compose.yml`
 
-## 版本控制
+## Version Control / 版本控制
 
-### Git忽略文件
+### Git Ignore Files / Git忽略文件
+**English:**
 - `node_modules/`
 - `dist/`
 - `build/`
@@ -237,14 +289,39 @@ demo/
 - `.env`
 - `.DS_Store`
 
-### 分支策略
+**中文:**
+- `node_modules/`
+- `dist/`
+- `build/`
+- `*.log`
+- `.env`
+- `.DS_Store`
+
+### Branch Strategy / 分支策略
+**English:**
+- `main`: Main branch
+- `develop`: Development branch
+- `feature/*`: Feature branch
+- `hotfix/*`: Hotfix branch
+
+**中文:**
 - `main`: 主分支
 - `develop`: 开发分支
 - `feature/*`: 功能分支
 - `hotfix/*`: 热修复分支
 
-## 开发流程
+## Development Process / 开发流程
 
+**English:**
+1. **Requirement Analysis** → `requirements/`
+2. **Design Planning** → `design/`
+3. **Prototype Design** → `prototype/`
+4. **Code Development** → `src/`
+5. **Containerization** → `docker/`
+6. **Deployment Testing** → `deployment/`
+7. **Documentation** → `docs/`
+
+**中文:**
 1. **需求分析** → `requirements/`
 2. **设计规划** → `design/`
 3. **原型设计** → `prototype/`
@@ -253,8 +330,16 @@ demo/
 6. **部署测试** → `deployment/`
 7. **文档编写** → `docs/`
 
-## 注意事项
+## Important Notes / 注意事项
 
+**English:**
+- All documents use Markdown format
+- Code needs comments
+- Configuration files need version control
+- Sensitive information should not be committed to repository
+- Regularly backup important data
+
+**中文:**
 - 所有文档使用Markdown格式
 - 代码需要添加注释
 - 配置文件需要版本控制
