@@ -3,7 +3,7 @@
 # HVAC能源优化系统演示项目
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/your-username/hvac-energy-optimizing-demo)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/grekyin/hvac-energy-optimizing-demo)
 [![Docker](https://img.shields.io/badge/docker-ready-blue.svg)](https://www.docker.com/)
 
 ## Project Overview / 项目概述
@@ -89,7 +89,7 @@ HVAC能源优化系统演示是一个用于展览会演示的工业空调节能�
 **English:**
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/hvac-energy-optimizing-demo.git
+git clone https://github.com/grekyin/hvac-energy-optimizing-demo.git
 cd hvac-energy-optimizing-demo
 
 # Start the demo system
@@ -102,7 +102,7 @@ docker-compose up -d
 **中文:**
 ```bash
 # 克隆仓库
-git clone https://github.com/your-username/hvac-energy-optimizing-demo.git
+git clone https://github.com/grekyin/hvac-energy-optimizing-demo.git
 cd hvac-energy-optimizing-demo
 
 # 启动演示系统
@@ -169,14 +169,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact / 联系方式
 
 **English:**
-- Project Issues: [GitHub Issues](https://github.com/your-username/hvac-energy-optimizing-demo/issues)
-- Email: your-email@example.com
-- Website: https://your-website.com
+- Project Issues: [GitHub Issues](https://github.com/grekyin/hvac-energy-optimizing-demo/issues)
+- Email: yinguancheng@icloud.com
+- Website: https://github.com/grekyin
 
 **中文:**
-- 项目问题: [GitHub Issues](https://github.com/your-username/hvac-energy-optimizing-demo/issues)
-- 邮箱: your-email@example.com
-- 网站: https://your-website.com
+- 项目问题: [GitHub Issues](https://github.com/grekyin/hvac-energy-optimizing-demo/issues)
+- 邮箱: yinguancheng@icloud.com
+- 网站: https://github.com/grekyin
 
 ## Acknowledgments / 致谢
 

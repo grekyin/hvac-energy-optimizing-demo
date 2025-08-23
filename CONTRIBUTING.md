@@ -82,7 +82,7 @@ If you have a suggestion for a new feature or improvement, please create a featu
 **English:**
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/hvac-energy-optimizing-demo.git
+git clone https://github.com/grekyin/hvac-energy-optimizing-demo.git
 cd hvac-energy-optimizing-demo
 
 # Install dependencies
@@ -96,7 +96,7 @@ docker-compose up -d
 **中文:**
 ```bash
 # 克隆仓库
-git clone https://github.com/your-username/hvac-energy-optimizing-demo.git
+git clone https://github.com/grekyin/hvac-energy-optimizing-demo.git
 cd hvac-energy-optimizing-demo
 
 # 安装依赖
