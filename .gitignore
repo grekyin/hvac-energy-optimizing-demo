@@ -153,3 +153,26 @@ coverage/
 # Documentation build / 文档构建
 docs/build/
 docs/_build/
+
+# NDA Compliance - Sensitive Project Folders / NDA合规 - 敏感项目文件夹
+# 以下文件夹包含敏感信息，不能上传到Git
+../invention-patent-application/
+../midasII-archive-ai-knowledge-backup/
+../midasII-mysql-db-backup/
+../midasII-runtime-java/
+../Model.Main.v0/
+../Model.Training.v0/
+../plc-and-intouch/
+../venv-midasii-archive/
+
+# Additional sensitive files / 其他敏感文件
+*.doc
+*.docx
+*.xlsx
+*.xls
+*.rar
+*.zip
+*.7z
+*.sql
+*.bak
+*.backup
